@@ -1,0 +1,115 @@
+@import "first.css";
+@import "second.css";
+@import "third.css";
+
+/* Start Variable */
+:root{
+    --main-color: #10cab7;
+    --secondary-color: #2c4755
+}
+
+
+
+/* End Variable */
+
+/* Start Global Rules */
+*{
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Work Sans", smart-serif;
+}
+
+.parent{
+    background-color: grey;
+
+}
+.contianer{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto
+}
+/* Small Screen */
+@media(min-width:768px){
+    .contianer{
+        width: 750px
+    }
+}
+
+/*Medum Screen */
+@media(min-width: 992px){
+    .contianer{
+        width: 970px
+    }
+}
+
+/* Larg screen */
+@media(min-width: 1200px){
+    .contianer{
+        width: 1170px
+    }
+}
+
+/* End Glubal Rules */
+
+/* Start Footer */
+.foot{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    background-image: url("../image/social.jpg");
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center
+}
+.foot::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.foot .contianer{
+    position: relative;
+}
+.foot #media{
+    margin-bottom: 20px;
+    width: 200px;
+    color: var(--main-color);
+}
+.foot p:not(.copyright){
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    width: fit-content;
+    margin: 20px auto;
+}
+.foot .social-icons i{
+    padding: 10px 15px;
+    color: var(--main-color);
+}
+.foot .copyright{
+    margin-top: 60px;
+}
+.foot .copyright span{
+    font-weight: bold;
+    color: var(--main-color);
+
+}
+/* End Footer */
+
+
+

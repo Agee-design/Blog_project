@@ -1,0 +1,101 @@
+
+/* Start information */
+.information{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;  
+}
+.information .contianer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+
+}
+.information .info{
+    padding: 20px;
+    text-align: center
+
+}
+.information .info i{
+    color: var(--main-color);
+    width: 50spx;
+    margin: 10px 0;
+}
+.information .info h3{
+    font-weight: 800;
+}
+.information .info p{
+    font-size: 14px;
+    color: #777;
+    line-height: 1.8
+
+}
+/* End information */
+/* Start Services */
+.services{
+    padding-top: 60px;
+    padding-bottom: 60px    
+}
+.services .service-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px
+}
+.services .service-content .serv{
+    display: flex;
+    margin-bottom: 40px
+}
+@media(max-width:767px){
+    .services .service-content .serv{
+        flex-direction: column;
+        text-align: center
+    }   
+}
+.services .service-content .serv I{
+    color: var(--main-color);
+    flex-basis: 60px
+}
+.services .service-content .serv .text{
+    flex: 1
+    
+}
+.services .service-content .serv .text h3{
+    margin: 0 0 20px
+}
+.services .service-content .serv .text p{
+    color: #777;
+    font-weight: 800;
+    line-height: 1.8
+}
+.services .service-content .col .imag{
+    text-align: center;
+    position:relative
+}
+.services .service-content .col .imag::before {
+    content:"";
+    background-color: var(--secondary-color);
+    width: 80px;
+    height: calc(100% + 100px);
+    top: -50px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    
+}
+.services .service-content img{
+    width: 260px;
+    height: 270px
+}
+figcaption{
+    color: grey;
+    font-style: italic;
+    padding: 1px;
+    text-align: center;
+}
+@media(max-width: 1199px){
+    .imag-colum{
+        display: none
+    }
+}
+/* End Services */

@@ -1,0 +1,141 @@
+/* Start components*/
+.special-heading {
+    color:#858585;
+    margin: 0;
+    font-weight: 800;
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: -2px
+}
+.special-heading + p{
+    color: #c5b7b7;
+    font-size: 20px;
+    text-align: center;
+    margin: -30px 0 0;
+}
+@media(max-width:767px){
+    .special-heading{
+        font-size: 60px;
+    }
+    .special-heading + p{
+        margin-top: -20px
+    }
+}
+/* End components*/
+
+/* start header */
+.head{
+    padding: 20px;
+
+}
+
+.head .contianer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.head .logo{
+    width: 50px;
+}
+
+.head .links{
+    position: relative
+}
+.head .links:hover .icon span:nth-child(2){
+    width: 100%
+}
+.head .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end
+}
+.head .links .icon span{
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px
+    
+}
+
+.head .links .icon span:first-child{
+    width: 100%
+}
+.head .links .icon span:nth-child(2){
+    width: 70%;
+    transition:0.3s
+}
+.head .links .icon span:last-child{
+    width: 100%
+}
+.head .links ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    background-color: #202020;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1
+}
+.head .links:hover ul{
+    display: block
+}
+.head .links ul::before{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px
+}
+.head .links ul li a{
+    padding: 15px;
+    background-color: #cfcaca;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s
+}
+.head .links ul li a:hover{
+    padding-left: 25px
+}
+.head .links ul li:not(:last-child) a{
+    border-bottom: 1px solid
+}
+
+/* Start landing */
+.landing{
+    background-image: url(../image/labd.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+    position: relative;
+    
+}
+.landing .intro_text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%
+    
+
+}
+.landing .intro_text h1{
+    margin: 0;
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--main-color);
+   
+
+}
+.landing .intro_text p{
+    font-size: 12px;
+    line-height: 1.8px
+
+}
+/* End landing */

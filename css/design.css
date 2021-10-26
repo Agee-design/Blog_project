@@ -1,0 +1,310 @@
+/* Start Global rule */
+
+*{
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Work Sans", smart-serif;
+    height: 100hv
+
+}
+
+/* End Global Ruke */
+.contianer{
+       display: grid;
+       height: 250vh;
+       grid-template-columns: 850px;
+       grid-template-rows: 60px 1fr 1fr 1fr;
+       grid-template-areas:
+       "had"
+       "cont"
+       "sid"
+       "fot";
+      
+}
+
+/* Small Screen */
+@media screen and (max-width: 768px){
+    .contianer{
+        width: 750px;
+        height: 300vh
+    }
+    .content .contianer p{
+        font-size: 18px
+    }
+    .content .contianer .Web_Deve p{
+        margin-top: 3px;
+        font-size: 18px
+    }
+    .content .contianer .Web_Deve h2{
+        margin-top: 80px
+    }
+    .content .contianer .Web_Design h2{
+        margin-top: 80px
+    }
+  .content .contianer .Web_Design p{
+        margin-top: 5px;
+        font-size: 18px
+    }
+    .content .contianer .graph h2{
+        margin-top: 20px;
+      
+    }
+  .content .contianer .graph p{
+        margin-top: 5px;
+        font-size: 18px
+    }
+    .footer p{
+        padding-bottom:20px
+    }
+   
+}
+.box{
+
+    background-color: #cfcaca;
+    border: 1px solid black
+}
+
+.header{
+    grid-area: had; 
+    background-image: url(../image/back.jpeg)
+     
+}
+ul{
+    list-style: none;
+    text-align: left;
+    color: white;
+    margin: 20px;
+    padding: 0;
+    position: absolute;
+    top: 20px
+}
+
+ul li{
+    padding: 10px;
+    background-color: #cfcaca;
+    display: inline;
+    text-decoration: none;
+    transition: 0.3s
+}
+ul li a{
+    color: black;
+    font-weight: bold
+}
+.content{
+    grid-area: cont;
+    background-color: #eee;
+    font-family: Times
+  
+}
+.content .contianer{
+    padding-top: 15px;
+    text-align: left;
+    padding-left: 15px;
+    position: relative;
+    justify-content: left
+}
+.content .contianer .Dsin{
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: left;
+    padding-left: 15px;
+    position: absolute
+
+}
+.content .contianer .Dsin h2{
+    font-size: 40px
+}
+.content .contianer .Dsin blockquote{
+    margin-top: 20px;
+    text-align: justify;
+    text-justify:inter--word;
+    padding-left: 3px;
+    padding-right: 15px;
+    font-size: 14px;
+    position: relative
+}
+.content .contianer .graph{
+    margin-top: 300px;
+    padding-top: 15px;
+    text-align: left;
+    padding-left: 15px;
+    position: absolute
+    
+}
+.content .contianer .graph h2{
+    text-align: left
+}
+.content .contianer .graph p{
+    margin-top: 30px;
+    text-align: justify;
+    text-justify:inter--word;
+    padding-left: 3px;
+    padding-right: 15px;
+    font-size: 14px;
+    position: relative
+}
+.content .contianer .Web_Design{
+    margin-top: 600px;
+    padding-top: 15px;
+    text-align: left;
+    padding-left: 15px;
+    position: absolute  
+}
+.content .contianer .Web_Design h2{
+    text-align: left
+}
+.content .contianer .Web_Design p{
+    margin-top: 30px;
+    text-align: justify;
+    text-justify:inter--word;
+    padding-left: 3px;
+    padding-right: 15px;
+    font-size: 14px;
+    position: relative
+
+}
+.content .contianer .Web_Deve{
+    margin-top: 900px;
+    padding-top: 15px;
+    text-align: left;
+    padding-left: 15px;
+    position: absolute  
+}
+.content .contianer .Web_Deve h2{
+    text-align: left
+}
+.content .contianer .Web_Deve p{
+    margin-top: 30px;
+    text-align: justify;
+    text-justify:inter--word;
+    padding-left: 3px;
+    padding-right: 15px;
+    font-size: 14px;
+    position: relative
+}
+.content .contianer .Autor_info{
+    margin-top: 1150px;
+    margin-left:0;
+    margin-right: 0;
+    padding-top: 15px;
+    text-align: center;
+    padding-left: 15px;
+    width:95%;
+    position: relative 
+}
+.content .contianer .Autor_info .card{
+    text-align: center;
+    border: 1px solid #000;
+    background-color: white
+}
+.content .contianer .Autor_info .card img{
+    padding-top: 10px
+}
+.content .contianer .Autor_info .card p{
+    padding-bottom: 10px
+}
+.aside{
+    grid-area: sid;
+    background-color: #eee
+}
+.aside .card{
+    margin: 15px 15px 15px 15px;
+    border: 1px solid white;
+    background: rgb(192, 185, 185);
+    text-align: center 
+}
+.aside .card img{
+    width: 100%
+}
+.card .Price{
+    color: grey;
+    font-size:20px;
+    padding-bottom: 10px
+}
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    margin-top: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px
+}
+.footer{
+    grid-area: fot;
+    background-color: #eee;
+    text-align: center;
+    padding-top: 30px
+}
+.footer .social-icons{
+    color: green;
+    padding-bottom: 20px
+}
+.footer p{
+    font-weight: bold;
+    font-size: 12px
+}
+
+@media(min-width:900px){
+   .contianer{
+    display: grid;
+    height: 240vh;
+    grid-template-columns: 150px 200px 150px;
+    grid-template-rows: 250px auto auto;
+    grid-template-areas:
+    "had had had had had had had had"
+    "cont cont cont cont cont cont sid sid"
+    "fot fot fot fot fot fot fot fot";
+  }
+  .content .contianer p{
+      font-size: 18px
+  }
+  .content .contianer .Web_Deve p{
+      margin-top: 5px;
+      font-size: 18px
+  }
+  .content .contianer .Web_Deve h2{
+      margin-top: 20px
+  }
+  .content .contianer .Web_Design h2{
+    margin-top: 50px
+  }
+.content .contianer .Web_Design p{
+    margin-top: 5px;
+    font-size: 18px
+  }
+  .content .contianer .graph h2{
+    margin-top: 15px;
+    
+  }
+.content .contianer .graph p{
+    margin-top: 5px;
+    font-size: 18px
+  }
+  .footer p{
+      padding-bottom:20px
+  }
+}
+
+@media(min-width:1100px){
+    .contianer{
+        display: grid;
+        height: 250vh;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 100px auto 100px;
+        grid-template-areas:
+        "had had had had had had had had"
+        "cont cont cont cont cont cont sid sid"
+        "fot fot fot fot fot fot fot fot";
+    }
+  
+}

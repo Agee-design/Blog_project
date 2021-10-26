@@ -1,0 +1,69 @@
+
+/* Start Contact us */
+.contact{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6; 
+
+}
+.contact .content{
+    display: flex;
+    justify-content: space-between
+}
+@media(max-width:767px){
+    .contact .content{
+        flex-direction: column;
+    }
+
+}
+.contact .content form{
+    flex-basis: 70%;
+    margin-top: 20px
+}
+.contact .content form .main-input{
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%
+}
+.contact .content form textarea.main-input{
+    height:200px
+}
+.contact .content form input[type="submit"] {
+background-color: var(--main-color);
+color: white;
+padding: 20px;
+border: none;
+display: flex;
+margin-left: auto;
+text-transform: uppercase;
+cursor: pointer
+}
+.contact .content .infor{
+    flex-basis: 25%;
+
+}
+
+.contact .content .infor h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 18px
+}
+.contact .content .infor .phone{
+    display: block;
+    margin-bottom: 10px;
+    color: #777
+}
+.contact .content .infor h4:nth-of-type(2){
+    margin-top: 90px
+
+}
+.contact .content .infor address{
+    color: #777;
+    line-height: 1.8
+
+}
+
+/* End Contact us */
